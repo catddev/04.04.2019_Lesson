@@ -1,4 +1,4 @@
-#include"Vector.h"
+п»ї#include"Vector.h"
 
 Vector::Vector(int size)
 {
@@ -26,7 +26,7 @@ Vector::Vector(const Vector & obj)
 Vector::~Vector()
 {
 	cout << "Destructor" << endl;
-	delete[] els; //явно прописываем деструктор
+	delete[] els; //СЏРІРЅРѕ РїСЂРѕРїРёСЃС‹РІР°РµРј РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 }
 
 void Vector::push_back(int el)
@@ -82,14 +82,14 @@ void Vector::erase_by_position(int pos)
 	cur_size--;
 }
 
-void Vector::edit_by_position(int pos) //работает по типу сеттера
+void Vector::edit_by_position(int pos) //СЂР°Р±РѕС‚Р°РµС‚ РїРѕ С‚РёРїСѓ СЃРµС‚С‚РµСЂР°
 {
 	cout << "Enter new value" << endl;
 	cin >> els[pos];
 
 }
 
-int Vector::at(int pos) //работает по типу геттера
+int Vector::at(int pos) //СЂР°Р±РѕС‚Р°РµС‚ РїРѕ С‚РёРїСѓ РіРµС‚С‚РµСЂР°
 {
 	return els[pos];
 }
