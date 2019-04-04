@@ -21,12 +21,15 @@ int main() {
 		cout << v.at(i) << " "; //v.at(i)=v[i];
 	cout << endl;
 
+	menu(v);
+
+	cout << "Copy: ";
 	Vector v1(v);//v1 точная копия вектора v
 	for (int i = 0; i < v1.size(); i++)
 		cout << v1.at(i) << " ";
 	cout << endl;
 
-	menu(v);
+	
 
 	system("pause");
 }

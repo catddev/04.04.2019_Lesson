@@ -1,4 +1,3 @@
-#pragma once
 #include "Vector.h"
 #include"function.h"
 
